@@ -40,17 +40,17 @@ const LineChart = ({ coinName, coinHistory }) => {
 
   return (
     <>
-      <Row className="chart-header" style={{ marginBottom: '20px' }}>
-        <Title level={2} className="chart-title" style={{ textAlign: 'center' }}>{coinName} Price Chart </Title>
+      <Row className="chart-header">
+        <Title level={2} className="chart-title">{coinName} Price Chart </Title>
       </Row>
-      <div style={{ width: '100%', maxWidth: '600px', margin: '0 auto' }}>
-        <Line data={chartData} options={options} />
-      </div>
+      <Line data={chartData} options={options} />
     </>
   );
 };
 
 export default LineChart;
+
+
 
 
 
